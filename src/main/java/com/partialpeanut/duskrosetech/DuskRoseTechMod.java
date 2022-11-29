@@ -1,6 +1,7 @@
 package com.partialpeanut.duskrosetech;
 
 import com.mojang.logging.LogUtils;
+import com.partialpeanut.duskrosetech.item.ModItems;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
@@ -19,6 +20,8 @@ public class DuskRoseTechMod {
 
     public DuskRoseTechMod() {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
+
+        ModItems.register(modEventBus);
 
         modEventBus.addListener(this::commonSetup);
 

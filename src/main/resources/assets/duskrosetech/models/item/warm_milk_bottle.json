@@ -1,0 +1,6 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "duskrosetech:item/warm_milk_bottle"
+  }
+}
